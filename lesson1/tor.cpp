@@ -61,7 +61,7 @@ int main(int argc, char **argv)
 
   gmsh::model::add("tor");
 
-  double lc = 4e-2;
+  double lc = 2e-2;
 
   double R = 0.5;
   double r1 = 0.09;
