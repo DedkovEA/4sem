@@ -8,6 +8,7 @@ add_executable(circle circle.cpp)
 add_executable(cylinder cylinder.cpp)
 
 add_executable(tor tor.cpp)
+add_executable(model model.cpp)
 
 # gmsh укажем явно (потому что он был просто распакован руками)
 add_library(gmsh SHARED IMPORTED)
@@ -23,3 +24,4 @@ target_link_libraries(circle ${GMSH_LIBRARY})
 target_link_libraries(cylinder ${GMSH_LIBRARY})
 
 target_link_libraries(tor ${GMSH_LIBRARY})
+target_link_libraries(model ${GMSH_LIBRARY})
